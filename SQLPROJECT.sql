@@ -43,8 +43,8 @@ describe olympics;
 select*from olympics
 limit 4;
 -- 2. Show count of unique sports present in Olympics
-select sport,count(sport) as countofsports from olympics
-group by sport;
+select count(distinct sport) as unisport_count
+from olympics;
 
 
 -- 3. Show how many different medals won by team India
